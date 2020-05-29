@@ -1,0 +1,43 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 85px;
+    border-bottom: 1px solid #eee; 
+}
+.header__logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+}
+.nav__wrap{
+    display: flex;
+    height: 100%;
+}
+.nav__wrap li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header__menu{
+    display: flex;
+    height: 100%;
+    width: 170px;
+}
+
+.header__menu div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85px;
+    height: 100%;
+}
+.header__menu--search{
+    background-color: #286add;
+
+}
+.header__menu--search i{
+    color: #fff;
+    
+}
