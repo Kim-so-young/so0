@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://kit.fontawesome.com/05603a2748.js" crossorigin="anonymous"></script>
     <script src="js/main.js" defer></script>
 </head>
@@ -29,11 +32,85 @@
     <div class="mainvisual">
         <div class="mainvisual__cont">
             <div class="mainvisual__typo">
-                <strong>INNOVATION</strong>
-                <h2>신기술로 새로운 가치 창출</h2>
-                <span>R&D투자와 창의적인 아이디어로 끊임없이 신기술에 도전합니다.</span>
+                <strong class="mainvisual__text1">INNOVATION</strong>
+                <h2 class="mainvisual__text2">신기술로 새로운 가치 창출</h2>
+                <span class="mainvisual__text3">R&D투자와 창의적인 아이디어로 끊임없이 신기술에 도전합니다.</span>
             </div>            
         </div>
     </div>
+    <div class="maincont1 cont ">
+        <div class="maincont1__img">
+            <img src="imgs/main_01.png" alt="오비오 직수 정수기">
+        </div>
+        <div class="maincont1__typo">
+            <div class="maincont1__typo--box">
+                <strong>오비오 직수 정수기</strong>
+                <h2>OHC-7000D</h2>
+                <span>
+                    위생적인 직수 방식으로 제품 내부 유로부는 전기 분해 살균<br>
+                    취수부 노즐은 UVC로 살균하여 오염으로부터 안심하실 수 있습니다.<br>
+                    소비자 중심 설계로 불필요한 전기 소모는 최소화하고<br>
+                    필터 교환은 원터치로 쉽게 하실 수 있습니다.
+                </span>
+                <a href="http://ovio.com/kr/product/view.php?returnURL=%2Fkr%2Fproduct%2Flist.php%3Fpart_idx%3D1&idx=11">VIEW MORE</a>
+            </div>
+        </div>           
+    </div>
+    <div class="maincont2 cont">
+        <div class="maincont2__typo">
+            <div class="maincont2__typo--box">
+                <strong>오비오 냉온 정수기</strong>
+                <h2>OHC-200U</h2>
+                <span>
+                    위생적인 직수 방식으로 제품 내부 유로부는 전기 분해 살균<br>
+                    취수부 노즐은 UVC로 살균하여 오염으로부터 안심하실 수 있습니다.<br>
+                    소비자 중심 설계로 불필요한 전기 소모는 최소화하고<br>
+                    필터 교환은 원터치로 쉽게 하실 수 있습니다.
+                </span>
+                <a href="http://ovio.com/kr/product/view.php?returnURL=%2Fkr%2Fproduct%2Flist.php%3Fpart_idx%3D1&idx=11">VIEW MORE</a>
+            </div>
+        </div> 
+        <div class="maincont2__img">
+            <img src="imgs/main_02.png" alt="오비오 직수 정수기">
+        </div>
+    </div>
+
+    <div class="maincont3 cont">
+        <h2>제품소개</h2>
+        <p>혁신적 기술과 차별화된 품질을 바탕으로 최고의 제품을 만듭니다.</p>
+        <div class="arrow">
+            <span class="prev"><i class="fas fa-chevron-left"></i></span>
+            <span><i class="fas fa-search"></i></span>
+            <span class="next"><i class="fas fa-chevron-right"></i></span>
+        </div>
+        <div class="slider">
+            <p><img src="imgs/good_img_01.png" alt=""></p>
+            <p><img src="imgs/good_img_02.png" alt=""></p>
+            <p><img src="imgs/good_img_03.png" alt=""></p>
+            <p><img src="imgs/good_img_04.png" alt=""></p>
+            <p><img src="imgs/good_img_05.png" alt=""></p>
+            <p><img src="imgs/good_img_06.png" alt=""></p>
+        </div>
+    </div>
+<script>
+    $(document).on("ready",function(){
+        $('.slider').slick({
+            infinite:true,
+            centerMode:true,
+            slidesToShow:3,
+            slidesToScroll:1,
+            arrows:false
+        });
+
+        $('.next').on("click", function(){
+            $('.slider').slick("slickNext");            
+        });
+        
+        $('.prev').on("click", function(){
+            $('.slider').slick("slickPrev");            
+        });
+
+    });
+</script>
 </body>
 </html>

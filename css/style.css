@@ -26,13 +26,15 @@ header{
     justify-content: center;
     align-items: center;
 }
+
+
 .nav__wrap li:not(.last){
     margin-right: 50px;
 }
 .header__menu{
     display: flex;
-    height: 100%;
     width: 170px;
+    height: 100%;
 }
 .header__menu div{
     display: flex;
@@ -65,4 +67,111 @@ header{
     position: absolute;
     bottom: 100px;
     left: 20px;
+}
+.mainvisual__text1{
+    
+}
+.mainvisual__text2{
+
+}
+.mainvisual__text3{
+
+}
+.maincont1{
+    display: flex;
+    position: relative;
+    height: 575px;
+}
+.maincont1__img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+    background-image: url('../imgs/main_bg01.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+}
+.maincont1__typo{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.maincont1__typo--box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    padding-left:25%;
+    box-sizing: border-box;
+
+}
+.maincont1__typo--box span{
+    display: block;
+    width:100%;
+    margin-bottom: 100px;
+}
+.maincont1__typo--box a{
+    display: block;
+}
+
+.maincont2{
+    display: flex;
+    position: relative;
+    height: 575px;
+}
+.maincont2__img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 50%;
+    height: 100%;
+    background-image: url('../imgs/main_bg02.jpg');
+    background-position: center;
+    background-size: cover;
+
+
+}
+.maincont2__typo{
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+.maincont2__typo--box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    padding-left:25%;
+    box-sizing: border-box;
+
+}
+.maincont2__typo--box span{
+    display: block;
+    width:100%;
+    margin-bottom: 100px;
+}
+.maincont2__typo--box a{
+    display: block;
+}
+.slider{
+    width: 1000px;
+    margin: 0 auto;
+}
+.slider p{
+    width: 20%;
+}
+.slider p img{
+    width: 100%;
+    opacity: 0.5;
+}
+.slick-list{
+    overflow: initial !important;
+}
+.slider p.slick-active img{
+    opacity: 1;
 }
