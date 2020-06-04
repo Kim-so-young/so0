@@ -1,3 +1,13 @@
+:root{
+    --point-color: #286add;
+    --title-size: 32px;
+    --title-weight: 700;
+}
+.product__name{
+    color: var(--point-color);
+    font-size: var(--title-size);
+    font-weight: var(--title-weight);
+}
 header{
     position: fixed;
     display: flex;
@@ -26,8 +36,6 @@ header{
     justify-content: center;
     align-items: center;
 }
-
-
 .nav__wrap li:not(.last){
     margin-right: 50px;
 }
@@ -148,7 +156,6 @@ header{
     width:100%;
     padding-left:25%;
     box-sizing: border-box;
-
 }
 .maincont2__typo--box span{
     display: block;
@@ -174,4 +181,47 @@ header{
 }
 .slider p.slick-active img{
     opacity: 1;
+}
+
+.maincont4{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 980px;
+}
+.maincont4__typo{
+   position: initial;
+   
+}
+.maincont4__typo--box{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+    padding-left:25%;
+    box-sizing: border-box;
+}
+.maincont4__img{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+}
+.maincont5{
+    display: flex;
+    width: 100%;
+    height: 300px;
+}
+.maincont5__img{
+    width: 50%;    
+    overflow: hidden;
+}
+.maincont5__img img{
+    transition: all 0.7s;
+}
+.maincont5__img:hover img{
+    transform: scale(1.2);
 }
