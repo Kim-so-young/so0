@@ -14,143 +14,26 @@
     <script src="js/main.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1 class="header__logo"><img src="imgs/logo.png" alt="오비오"></h1>
-        <nav>
-            <ul class="nav__wrap">
-                <li>회사소개</li>
-                <li>제품소개</li>
-                <li>기술소개</li>
-                <li>홍보센터</li>
-                <li class="last">고객센터</li>
-            </ul>
-        </nav>
-        <div class="header__menu">
-            <div class="header__menu--icon"><i class="fas fa-bars"></i></div>
-            <div class="header__menu--search"><i class="fas fa-search"></i></div>
+<header>
+    <h1 class="header__logo"><img src="imgs/logo.png" alt="OVIO"></h1>
+    <nav class="header__gnb">
+        <ul class="gnb__wrap">
+            <li><a href="">회사소개</a></li>
+            <li><a href="">제품소개</a></li>
+            <li><a href="">기술소개</a></li>
+            <li><a href="">홍보센터</a></li>
+            <li><a href="" class="last">고객센터</a></li>
+        </ul>
+    </nav>
+    <div class="header__box-r">
+        <div class="header__lang">
+            <a href="">EN</a>
+            <a href="" class="on">KR</a>
+            <a href="" class="last">JP</a>
         </div>
-    </header>
-    <div class="mainvisual">
-        <div class="mainvisual__cont">
-            <div class="mainvisual__typo">
-                <strong class="mainvisual__text1">INNOVATION</strong>
-                <h2 class="product__name">신기술로 새로운 가치 창출</h2>
-                <span class="mainvisual__text3">R&D투자와 창의적인 아이디어로 끊임없이 신기술에 도전합니다.</span>
-            </div>            
-        </div>
+        <div class="header__menu-bt"><i class="fas fa-bars"></i></div>
+        <div class="header__search"><i class="fas fa-search"></i></div>
     </div>
-    <div class="maincont1 cont ">
-        <div class="maincont1__img">
-            <img src="imgs/main_01.png" alt="오비오 직수 정수기">
-        </div>
-        <div class="maincont1__typo">
-            <div class="maincont1__typo--box">
-                <strong >오비오 직수 정수기</strong>
-                <h2 class="product__name">OHC-7000D</h2>
-                <span>
-                    위생적인 직수 방식으로 제품 내부 유로부는 전기 분해 살균<br>
-                    취수부 노즐은 UVC로 살균하여 오염으로부터 안심하실 수 있습니다.<br>
-                    소비자 중심 설계로 불필요한 전기 소모는 최소화하고<br>
-                    필터 교환은 원터치로 쉽게 하실 수 있습니다.
-                </span>
-                <a href="http://ovio.com/kr/product/view.php?returnURL=%2Fkr%2Fproduct%2Flist.php%3Fpart_idx%3D1&idx=11">VIEW MORE</a>
-            </div>
-        </div>           
-    </div>
-    <div class="maincont2 cont">
-        <div class="maincont2__typo">
-            <div class="maincont2__typo--box">
-                <strong>오비오 냉온 정수기</strong>
-                <h2 class="product__name">OHC-200U · 500U</h2>
-                <span>
-                    4단계 필터시스템과 스테인리스 탱크, 분리형 출수구 적용으로<br>
-                    제품 내, 외부의 위생성과 사용편의성을 높였습니다.<br>
-                    현대적 감각의 슬림 디자인(데스크탑형/스탠드형)과 3가지 색상으로<br>
-                    선택의 폭이 넓고 공간활용도가 높습니다.<br>
-                    미려한 모던 디자인으로 어느 공간에나 잘 어울립니다.
-                </span>
-                <a href="http://ovio.com/kr/product/view.php?returnURL=%2Fkr%2Fproduct%2Flist.php%3Fpart_idx%3D1&idx=11">VIEW MORE</a>
-            </div>
-        </div> 
-        <div class="maincont2__img">
-            <img src="imgs/main_02.png" alt="오비오 직수 정수기">
-        </div>
-    </div>
-
-    <div class="maincont3 cont">
-        <h2>제품소개</h2>
-        <p>혁신적 기술과 차별화된 품질을 바탕으로 최고의 제품을 만듭니다.</p>
-        <div class="arrow">
-            <span class="prev"><i class="fas fa-chevron-left"></i></span>
-            <span><i class="fas fa-search"></i></span>
-            <span class="next"><i class="fas fa-chevron-right"></i></span>
-        </div>
-        <div class="slider">
-            <p><img src="imgs/good_img_01.png" alt=""></p>
-            <p><img src="imgs/good_img_02.png" alt=""></p>
-            <p><img src="imgs/good_img_03.png" alt=""></p>
-            <p><img src="imgs/good_img_04.png" alt=""></p>
-            <p><img src="imgs/good_img_05.png" alt=""></p>
-            <p><img src="imgs/good_img_06.png" alt=""></p>
-        </div>
-    </div>
-<script>
-    $(document).on("ready",function(){
-        $('.slider').slick({
-            infinite:true,
-            centerMode:true,
-            slidesToShow:3,
-            slidesToScroll:1,
-            arrows:false
-        });
-
-        $('.next').on("click", function(){
-            $('.slider').slick("slickNext");            
-        });
-        
-        $('.prev').on("click", function(){
-            $('.slider').slick("slickPrev");            
-        });
-
-    });
-</script>
-
-<div class="maincont4">
-    <div class="maincont4__typo">
-        <div class="maincont4__typo--box">
-            <h2>회사소개</h2>
-            <p class="product__name">고객의 성공과 함께 하는<br>최고의 파트너</p>
-            <p>1998년 설립 이후 냉온수기, 정수기, 커피 머신 등<br>
-            환경가전 관련 분야에서 국내 최고의 기술력을 보유한 연구개발중심의 제조 전문기업 입니다.</p>
-            <div class="search">
-                <span><i class="fas fa-search"></i></span>
-            </div>
-        </div>
-    </div>        
-    <div class="maincont4__img">
-        <img src="imgs/main_bg_water_pc.jpg">
-    </div>
-</div>
-
-<div class="maincont5">
-    <div class="maincont5__img1 maincont5__img">
-        <div class="maincont5__typo">
-            <strong>Consultation</strong>
-            <h2>상담문의</h2>
-            <span>사업, 제품, 부품 관련 문의에 대해<br>언제나 친절히 상담 드리겠습니다.</span>
-        </div>
-        
-        <img src="imgs/main_bnr_img01_01.jpg" alt="">
-    </div>
-    <div class="maincont5__img2 maincont5__img">
-        <div class="maincont5__typo">
-            <strong>Consultation</strong>
-            <h2>상담문의</h2>
-            <span>사업, 제품, 부품 관련 문의에 대해<br>언제나 친절히 상담 드리겠습니다.</span>
-        </div>
-        <img src="imgs/main_bnr_img02.jpg" alt="">
-    </div>
-</div>
-
+</header>
 </body>
 </html>
